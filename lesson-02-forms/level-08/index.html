@@ -3,12 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lesson 02 — Level 08</title>
+    <title>Lesson 02 — Level 07</title>
   </head>
   <body>
-    <h1>Level 08 — Grouping Controls</h1>
+    <h1>Ratings</h1>
     <form>
-      <!-- TODO: Group related controls using <fieldset> and describe the group with <legend> -->
+      <fieldset>
+        <legend>How would you rate this product?</legend>
+      <label for="goodRating">Good:</label>
+      <input id="goodRating" type="checkbox" name="rating" value="good" />
+      <br />
+      <label for="badRating">Bad:</label>
+      <input id="badRating" type="checkbox" name="rating" value="bad" />
+      <br />
+      <label for="neutralRating">Neutral:</label>
+      <input id="neutralRating" type="checkbox" name="rating" value="neutral" />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      </fieldset>
+      
     </form>
   </body>
 </html>

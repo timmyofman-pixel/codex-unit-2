@@ -3,12 +3,77 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lesson 02 — Level 11</title>
+    <title>Lesson 02 — Level 09</title>
   </head>
   <body>
-    <h1>Level 11 — Integrate & Polish</h1>
+    <h1>Level 09 — Basic Validation</h1>
     <form>
-      <!-- TODO: Combine all pieces: inputs, labels, fieldsets, validation, and submit control -->
+      <fieldset>
+        <legend>Leave a review</legend>
+      <label for="username">Username</label>
+      <input id="username" name="username"
+      type="text" required minilength="3"
+      maxlength="20">
+
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating"
+      type="range" min="1" max="5" required>
+      <button type="submit">Submit</button>
+      </fieldset>
+
+          <fieldset>
+        <legend>How would you rate this product?</legend>
+      <label for="goodRating">Good:</label>
+      <input id="goodRating" type="checkbox" name="rating" value="good" />
+      <br />
+      <label for="badRating">Bad:</label>
+      <input id="badRating" type="checkbox" name="rating" value="bad" />
+      <br />
+      <label for="neutralRating">Neutral:</label>
+      <input id="neutralRating" type="checkbox" name="rating" value="neutral" />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Color</legend>
+        <select>
+        <option>Choose a favorite</option>
+        <optgroup label="Colors">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+        <option>Orange</option>
+        <option>Purple</option>
+        <option>Pink</option>
+        <option>Brown</option>
+        <option>Black</option>
+        <option>White</option>
+        <option>Grey</option>
+        
+        </optgroup>
+        <optgroup label="Fruits">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Grapes</option>
+        <option>Strawberry</option>
+        </optgroup>
+        <optgroup label="Vegetables">
+        <option>Carrot</option>
+        <option>Broccoli</option>
+        <option>Spinach</option>
+        <option>Cabbage</option>
+        <option>Lettuce</option>
+        </optgroup>
+          </select>
+          <button type="submit">Submit</button>
+      </fieldset>
+
+      <!-- TODO: Add required attributes and minlength/maxlength where appropriate -->
+      <!-- TODO: If using a range input, include min and max -->
     </form>
   </body>
 </html>
