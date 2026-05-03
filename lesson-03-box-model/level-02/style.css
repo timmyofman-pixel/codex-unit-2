@@ -4,3 +4,36 @@
   margin: 2rem;
 }
 /* TODO: add styles for .layer-content, .layer-padding, .layer-border, .layer-margin */
+.layer-content {
+  background-color: aqua;
+}
+
+.layer-padding {
+  background-color: rgb(255, 0, 0);
+  padding: 10px;
+}
+
+.layer-border {
+border-style: solid;
+border-width: 3px;
+margin: 10px;
+}
+
+.layer-margin {
+  background-color: rgb(7, 41, 235);
+  height: 50px;
+}
+
+.transparent {
+  height: 100px;
+}
+
+h1 {
+  padding: 10px;
+}
+
+span {
+ padding:10px;
+ border-style: solid;
+ border-width: 5px; 
+}
