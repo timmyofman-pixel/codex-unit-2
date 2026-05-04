@@ -6,11 +6,15 @@ const car = {
   features: {
     sunroof: true,
     navigation: true,
-    heatedSeats: false
+    heatedSeats: false,
+    bluetooth: true,
+    electricWindows: true,
   }
 }
 
-console.log(car.year); 
-export default car;{
-  /* TODO: nested structure */
-};
+
+console.log(car.features,);
+console.log(car.features.sunroof);
+
+export default car;
+export default { theme: { color: "red" } };
