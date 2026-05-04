@@ -1,1 +1,8 @@
 /* TODO: Inspect and override user-agent defaults like margins on headings and paragraphs */
+p {
+  margin: 0
+}
+h1 {
+  font-weight: normal;
+  margin: 0
+}
