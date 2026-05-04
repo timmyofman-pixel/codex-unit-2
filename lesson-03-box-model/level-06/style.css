@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: top;
   width: 48%;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  background-color: blueviolet;
 }
 /* TODO: Adjust margins, widths, and box model rules to create a stable two-column layout */

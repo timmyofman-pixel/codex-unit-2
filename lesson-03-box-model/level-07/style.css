@@ -1,6 +1,28 @@
-/* TODO: Toggle box-sizing and observe width differences */
-.box {
+/* 1. Toggle box-sizing on example elements to see the difference */
+.box-content {
+  box-sizing: content-box;
   width: 200px;
   padding: 20px;
-  border: 4px solid #333;
+  border: 10px solid #333;
+  /* Width Difference: The total rendered width is 260px. */
+  /* Calculation: 200px (width) + 40px (padding) + 20px (border). */
 }
+
+.box-border {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 10px solid #333;
+  /* Width Difference: The total rendered width is exactly 200px. */
+  /* The padding and border are "absorbed" into the width. */
+}
+
+/* 2. Global border-box rule */
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+/* Benefits: 
+   1. Predictability: Elements don't unexpectedly grow when you add padding.
+   2. Simplified Layouts: You don't have to do math to keep elements at 100% or 50% width. */
