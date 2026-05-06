@@ -4,10 +4,27 @@ const successEl = document.getElementById("success");
 
 if (form) {
   form.addEventListener("submit", async (event) => {
-    // TODO: call event.preventDefault()
-    // TODO: build a data object from form fields
-    // TODO: use fetch with async/await to POST to a dummy login endpoint
-    // Do not commit real API keys — use test endpoints or mocks in tests
-    console.log("submit handler placeholder");
+    event.preventDefault();
+
+    const data = {
+      username: form.elements['username'].value,
+      password: form.elements['password'].value
+    };
+
+    const response = await fetch('https://api.jsoning.com/mock/public/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      successEl.innerText = "Login successful!";
+      errorEl.innerText = "";
+    } else {
+      errorEl.innerText = "Login failed. Please check your credentials.";
+      successEl.innerText = "";
+    }
   });
 }
