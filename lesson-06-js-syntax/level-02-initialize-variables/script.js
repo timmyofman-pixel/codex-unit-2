@@ -7,4 +7,32 @@
 
 // Add your lines below:
 
-let totalCount = 0;
+
+
+let totalCount = 0; 
+
+const userName = "Chris";
+const userCity = "Morning Sun";
+const userOccupation = "Developer";
+const userHobby = "Photography";
+const userFavoriteColor = "Blue";
+const userFavoriteFood = "Pizza";
+const userFavoriteMovie = "The Matrix";
+const userFavoriteBook = "The Lord of the Rings";
+const userFavoriteMusicGenre = "Rock";
+
+
+
+const numberOfBooks = 5;
+const numberOfMovies = 3;
+const numberOfCountriesVisited = 10;
+const numberOfLanguagesSpoken = 2;
+const numberOfPets = 1;
+const numberOfChildren = 2;
+const numberOfFriends = 5;
+
+
+
+
+
+export default userCity;

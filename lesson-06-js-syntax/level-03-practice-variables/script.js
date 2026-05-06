@@ -1,22 +1,28 @@
 // Level 03 — Assign values and debug string initializations
 // TODO: Part A: assign values to five declared variables (on separate lines).
 
-let firstName;
-let lastName;
-let userAge;
-let city;
-let country;
+let firstName; 
+let lastName; 
+let userAge; 
+let city; 
+let country; 
+
+firstName = "Chris";
+lastName = "Timmerman";
+userAge = "34";
+city = "Burlington";
+country = "USA";
 
 // TODO: Part B: fix five faulty string initializations so they parse correctly.
 
-let = "noName";
+let myVariable = noName;
 
-let lastName "Smith";
+let lastName = "Smith";
 
-let city = "New York;
+let city = "New York";
 
-let country = ""USA"";
+let country ="USA";
 
-let planet = Earth;
+let planet = "Earth";
 
-export default firstame;
+export default lastName;

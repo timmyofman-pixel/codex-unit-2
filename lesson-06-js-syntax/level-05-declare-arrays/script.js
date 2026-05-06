@@ -4,4 +4,8 @@
 // Example:
 // let userNames = ["Ava", "Jon", "Maya"];
 
-let userNames = [];
+const userNames = ["Christopher","Jenna", "Racheal", "Michael", "Sarah"];
+const userAges = [25, 30, 35, 40, 45];
+
+
+export default userNames;

@@ -7,3 +7,18 @@
 // Add your lines below:
 
 let userName;
+let userAge;
+let userEmail;
+let userHeight;
+let UserWeight;
+let userGender;
+let UserCountry;
+let userState;
+let userCity;
+let userOccupation;
+let userHobby;
+let userFavoriteColor;
+let userFavoriteFood;
+let userFavoriteMovie;
+let userFavoriteBook;
+let userFavoriteMusicGenre;
