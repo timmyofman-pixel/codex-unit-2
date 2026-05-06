@@ -32,3 +32,19 @@ const order = {
 };
 
 const id = order.id;
+const status = order.status;
+const name = order.customer.name;
+const tax = order.totals.tax;
+const email = order.customer.contact.email;
+const phone = order.customer.contact.phone;
+const street = order.customer.address.street;
+const city = order.customer.address.city;
+const state = order.customer.address.state;
+const shippingMethod = order.shippingMethod;
+const isGift = order.isGift;
+const placedAt = order.placedAt;
+const items = order.items;
+const subtotal = order.totals.subtotal;
+const total = order.totals.total;
+
+export default tax;
