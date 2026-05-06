@@ -3,9 +3,15 @@ const questionEl = document.getElementById("question");
 
 if (triviaForm) {
   triviaForm.addEventListener("submit", async (e) => {
-    // TODO: preventDefault, build query params with URLSearchParams
-    // TODO: fetch trivia API with async/await then parse JSON
-    // TODO: render result[0].question.text into the page
-    console.log("level-05 placeholder");
+    e.preventDefault();
+
+    const data = new FormData(triviaForm);
+    const searchParams = new URLSearchParams(data);
+    const url = `https://api.jsoning.com/mock/public/trivia?${searchParams.toString()}`;
+
+    const response = await fetch(url);
+    const result = await response.json();
+
+    questionEl.innerText = result[0].question.text;
   });
 }

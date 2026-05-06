@@ -1,6 +1,5 @@
 const msg7 = document.getElementById("message");
 if (msg7) {
-  // TODO: insert explanatory text about API keys (do not include real keys)
   msg7.textContent =
-    "Add an explanation about API keys here. Do not commit real keys.";
+    "API keys are unique credentials used to authenticate and authorize requests to an API. Because they can grant access to sensitive data or paid services, they must be kept secret. Always use environment variables or secure storage and never commit real API keys to public version control systems like GitHub.";
 }
