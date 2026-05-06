@@ -5,7 +5,11 @@ const result = document.getElementById("result");
 
 async function handleSubmit(event) {
   event.preventDefault();
-  // TODO: fetch and parse JSON, then set result.innerText with a short explanation
+  const response = await fetch("https://api.jsoning.com/mock/public/users");
+  const data = await response.json();
+
+  result.innerText = `Successfully fetched ${data.length} users and parsed the JSON body using async/await.`;
 }
 
 if (form) form.onsubmit = handleSubmit;
+ 

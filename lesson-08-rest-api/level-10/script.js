@@ -7,7 +7,25 @@ const v3 = document.getElementById("v3");
 
 async function handleSubmit(e) {
   e.preventDefault();
-  // TODO: collect data, POST to echo server, parse response, and insert values into v1/v2/v3
+  const data = {
+    username: form.elements[0].value,
+    email: form.elements[1].value,
+    id: form.elements[2].value
+  };
+
+  const response = await fetch('https://api.jsoning.com/mock/public/echo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+
+  const responseData = await response.json();
+
+  v1.innerText = `Username: ${responseData.username}`;
+  v2.innerText = `Email: ${responseData.email}`;
+  v3.innerText = `ID: ${responseData.id}`;
 }
 
 if (form) form.onsubmit = handleSubmit;

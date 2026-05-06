@@ -5,8 +5,11 @@ const out = document.getElementById("data");
 
 function handleSubmit(e) {
   e.preventDefault();
-  // TODO: build a `data` object from form.elements using indexes (e.g. form.elements[0].value)
-  // Example display: out.innerText = JSON.stringify(data, null, 2);
+  const data = {
+    username: form.elements[0].value,
+    email: form.elements[1].value
+  };
+  out.innerText = JSON.stringify(data, null, 2);
 }
 
 if (form) form.onsubmit = handleSubmit;

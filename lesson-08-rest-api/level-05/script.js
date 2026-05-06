@@ -7,7 +7,13 @@ const pId = document.getElementById("id");
 
 async function handleSubmit(e) {
   e.preventDefault();
-  // TODO: implement fetch and set the three elements' innerText
+  const response = await fetch("https://api.jsoning.com/mock/public/users");
+  const users = await response.json();
+  
+  const user = users[0];
+  pUsername.innerText = user.username;
+  pEmail.innerText = user.email;
+  pId.innerText = user.id;
 }
 
 if (form) form.onsubmit = handleSubmit;

@@ -7,7 +7,28 @@ const r3 = document.getElementById("r3");
 
 async function handleSubmit(e) {
   e.preventDefault();
-  // TODO: build data object, POST it, parse response, and display three response values
+  const data = {
+    name: form.elements['name'].value,
+    price: form.elements['price'].value,
+    category: form.elements['category'].value
+  };
+
+  const dataString = JSON.stringify(data);
+
+  const response = await fetch('https://api.jsoning.com/mock/public/products', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: dataString
+  });
+
+  const responseData = await response.json();
+  const echoedProduct = responseData.json;
+
+  r1.innerText = echoedProduct.name;
+  r2.innerText = echoedProduct.price;
+  r3.innerText = echoedProduct.category;
 }
 
 if (form) form.onsubmit = handleSubmit;
