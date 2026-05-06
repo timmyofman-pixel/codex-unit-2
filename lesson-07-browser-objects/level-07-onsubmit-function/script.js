@@ -3,10 +3,11 @@
 // TODO: assign the handler to form.onsubmit (use the form's id in the HTML)
 
 function handleSubmit(event) {
-  // TODO: accept event and log a message mentioning 'onsubmit'
-  console.log("onsubmit handler called");
+  event.preventDefault();
+  console.log("The onsubmit event handler was triggered. This function prevents the default browser refresh and allows us to handle form data via JavaScript.");
 }
 
-// Scaffold assignment (adjust id if needed):
-// const form = document.getElementById('sample-form');
-// if (form) form.onsubmit = handleSubmit;
+const form = document.getElementById('sample-form');
+if (form) {
+  form.onsubmit = handleSubmit;
+}
