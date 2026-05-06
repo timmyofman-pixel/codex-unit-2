@@ -5,7 +5,8 @@ const result = document.getElementById("result");
 
 async function handleSubmit(event) {
   event.preventDefault();
-  // TODO: use async/await to call fetch('https://api.jsoning.com/mock/public/users') and then set result.innerText
+  await fetch('https://api.jsoning.com/mock/public/users');
+  result.innerText = "Successfully fetched data from the mock users API using async/await.";
 }
 
 if (form) form.onsubmit = handleSubmit;

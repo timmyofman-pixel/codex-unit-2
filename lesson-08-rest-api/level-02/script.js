@@ -5,7 +5,7 @@ const result = document.getElementById("result");
 
 function handleSubmit(event) {
   event.preventDefault();
-  // TODO: set result.innerText to a short explanation about fetch
+  result.innerText = "The fetch() method is a built-in JavaScript function used to make asynchronous network requests, allowing you to send or receive data from a server or API without reloading the page.";
 }
 
 if (form) form.onsubmit = handleSubmit;
