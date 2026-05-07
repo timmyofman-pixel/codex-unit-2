@@ -1,6 +1,5 @@
-const form = document.getElementById("login-form");
-const errorEl = document.getElementById("error");
-const successEl = document.getElementById("success");
+const formTag = document.getElementById("loginForm");
+formTag.onsubmit = handleSubmit;
 
 if (form) {
   form.addEventListener("submit", async (event) => {

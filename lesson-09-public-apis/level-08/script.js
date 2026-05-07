@@ -1,6 +1,5 @@
-const btn8 = document.getElementById("get-joke");
-const jokeEl = document.getElementById("joke");
-const errorEl8 = document.getElementById("error");
+const formTag = document.getElementById("jokeForm");
+formTag.onsubmit = handleSubmit;
 
 if (btn8) {
   btn8.addEventListener("click", async () => {

@@ -1,5 +1,5 @@
-const triviaForm = document.getElementById("trivia-form");
-const questionEl = document.getElementById("question");
+const formTag = document.getElementById("queryForm");
+formTag.onsubmit = handleSubmit;
 
 if (triviaForm) {
   triviaForm.addEventListener("submit", async (e) => {

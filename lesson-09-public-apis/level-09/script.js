@@ -1,7 +1,5 @@
-const challengeForm = document.getElementById("search-form");
-const resultsEl = document.getElementById("results");
-const errorEl9 = document.getElementById("error");
-const paginationEl = document.getElementById("pagination");
+const formTag = document.getElementById("challengeForm");
+formTag.onsubmit = handleSubmit;
 
 if (challengeForm) {
   challengeForm.addEventListener("submit", async (e) => {

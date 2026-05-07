@@ -1,5 +1,5 @@
-const btn3 = document.getElementById("fetch-btn");
-const errorEl3 = document.getElementById("error");
+const formTag = document.getElementById("loginForm");
+formTag.onsubmit = handleSubmit;
 
 if (btn3) {
   btn3.addEventListener("click", async () => {

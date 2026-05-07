@@ -1,5 +1,5 @@
-const form4 = document.getElementById("search-form");
-const out4 = document.getElementById("out");
+const formTag = document.getElementById("queryForm");
+formTag.onsubmit = handleSubmit;
 
 if (form4) {
   form4.addEventListener("submit", async (e) => {
